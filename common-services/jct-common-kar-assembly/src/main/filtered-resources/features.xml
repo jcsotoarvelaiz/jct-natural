@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="test-capability-${project.version}"
+    xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0">
+
+    <feature name="test-capability" version="${project.version}">
+
+        <feature version="${camel.version}">camel-core</feature>
+        <feature version="${camel.version}">camel-velocity</feature>
+        <feature version="${camel.version}">camel-jackson</feature>
+        <feature version="${camel.version}">camel-http</feature>
+        <feature version="${camel.version}">camel-jetty</feature>
+        <feature version="${camel.version}">camel-jaxb</feature>
+        <feature version="${camel.version}">camel-gson</feature>
+        <feature version="${camel.version}">camel-xmljson</feature>
+        <feature version="${camel.version}">camel-restlet</feature>
+        <feature version="${camel.version}">camel-spring</feature>
+        <feature version="${camel.version}">camel-script</feature>
+        <bundle>mvn:com.jct/jct-common-component/${project.version}</bundle>
+    </feature>
+</features>
